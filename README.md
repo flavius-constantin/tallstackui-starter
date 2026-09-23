@@ -4,6 +4,53 @@ A Laravel 13 + Livewire 4 starter kit for authentication, built entirely with **
 
 It started as the [official Laravel Livewire starter kit](https://github.com/laravel/livewire-starter-kit) and had every Flux component swapped for a TallStackUI equivalent — including a handful of small components that TallStackUI doesn't ship out of the box, rebuilt from scratch to match the look of their Flux counterparts.
 
+## Screenshots
+
+<table>
+<tr>
+<td width="50%">
+
+**Dashboard**
+![Dashboard](docs/screenshots/dashboard.png)
+
+</td>
+<td width="50%">
+
+**Profile settings**
+![Profile settings](docs/screenshots/settings-profile.png)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Delete account confirmation**
+![Delete account confirmation](docs/screenshots/settings-delete-account.png)
+
+</td>
+<td width="50%">
+
+**Security settings** — password, 2FA, passkeys
+![Security settings](docs/screenshots/settings-security.png)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**Two-factor authentication setup**
+![Two-factor authentication setup](docs/screenshots/settings-two-factor.png)
+
+</td>
+<td width="50%">
+
+**Appearance settings** — light / system / dark
+![Appearance settings](docs/screenshots/settings-appearance.png)
+
+</td>
+</tr>
+</table>
+
 ## Features
 
 - **Authentication** (Laravel Fortify): login, registration, password reset, email verification
