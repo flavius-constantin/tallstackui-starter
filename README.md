@@ -234,7 +234,6 @@ The original starter kit's version was an inline Laravel SVG mark. This one inst
 | Typography & layout primitives | Flux built-ins (`flux:heading`, `flux:subheading`, `flux:text`, `flux:separator`, `flux:brand`) | Rebuilt locally, see [Custom components](#custom-components) above |
 | User menu | `desktop-user-menu.blade.php` (Flux dropdown) | [`user-menu.blade.php`](resources/views/components/user-menu.blade.php) (TallStackUI `<x-dropdown>`) |
 | `resources/css/app.css` | Imports `flux.css`, Flux-specific focus-ring rules | Imports TallStackUI's `v4.css`, adds `@tailwindcss/forms`, custom `--color-primary-*` theme scale |
-| Component tag prefix | — | `TALLSTACKUI_PREFIX` in `.env` is left empty so components resolve as `<x-input>` instead of `<x-{prefix}-input>` |
 
 Everything else — Fortify actions, routes, migrations, tests — is untouched application scaffolding.
 
@@ -243,6 +242,11 @@ Everything else — Fortify actions, routes, migrations, tests — is untouched 
 ```bash
 php artisan test
 ```
+
+## Credits
+
+- [Caleb Porzio](https://github.com/calebporzio) and the [Flux](https://fluxui.dev) team — the original starter kit's UI, and the inspiration for the custom components rebuilt here
+- [AJ Meireles](https://github.com/devajmeireles) — creator of [TallStackUI](https://tallstackui.com)
 
 ## License
 
