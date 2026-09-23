@@ -68,8 +68,22 @@ It started as the [official Laravel Livewire starter kit](https://github.com/lar
 
 ## Installation
 
+### Option A: Laravel installer (recommended)
+
+The [Laravel installer](https://laravel.com/docs/installation#the-laravel-installer)'s `new` command supports `--using=<git-url>` to bootstrap a project from any public git repository — not just packages registered on Packagist. Since this repo isn't published to Packagist, install it by URL:
+
 ```bash
-git clone <this-repo-url> my-app
+laravel new my-app --using=https://github.com/flavius-constantin/tallstackui-starter
+```
+
+This downloads the repo (via `npx tiged`, no git history carried over), runs `composer install`, generates your `APP_KEY`, and walks you through the usual database prompts — exactly like installing an official starter kit.
+
+> A plain `laravel new my-app --using=vendor/package` only works for packages published on [Packagist](https://packagist.org) (that's how `--using=laravel/livewire-starter-kit` or `--using=tallstackui/starter-kit` resolve). For a git URL like this one, it must contain `://` — a `git@github.com:...` SSH remote won't trigger the URL path, use the `https://` form.
+
+### Option B: git clone
+
+```bash
+git clone https://github.com/flavius-constantin/tallstackui-starter.git my-app
 cd my-app
 composer install
 npm install
